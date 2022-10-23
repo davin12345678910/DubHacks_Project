@@ -65,7 +65,7 @@ h1, h2 {
 }
 
 #first-buttons > button, #back-to-choose-student, #student-submit-button, #back-to-choose-teacher, #teacher-submit-button,
-#back-to-student-question, #back-to-student-profile {
+#back-to-student-question, #back-to-teacher-profile {
   outline-style: solid;
   border: 10px solid black;
   border-radius: 5px;
