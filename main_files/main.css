@@ -2,6 +2,33 @@
 Team members: Davin Win Kyi, Aditya`
 */
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .hidden {
   display: none;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#first-buttons {
+  height: 500px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#first-buttons > button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10%;
+}
+
+#student-submit-button, #teacher-submit-button {
+  height: 25px;
+  width: 150px;
+  font-family: Arial, Helvetica, sans-serif;
 }
