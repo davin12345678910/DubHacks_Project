@@ -1,12 +1,13 @@
 from http.client import HTTPException
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from typing import List
 from uuid import UUID, uuid4
 from models import User, Gender, Role, Tutor
 from fastapi.templating import Jinja2Templates
+# from jinja2 import Jinja2Template
 
 app = FastAPI()
-templaes = Jinja2Templates(directory="htmldirectory")
+templates = Jinja2Templates(directory="htmldirectory")
 
 db_user: list[User] = [
     User(
@@ -44,6 +45,15 @@ db_tutor: list[Tutor] = [
     )
 ]
 
+
+@app.get("/home")
+def write_home(request: Request):
+    # return {
+    #     "Name": user_name,
+    #     "Age": 24,
+    #     "query": query
+    # }
+    return templates.TemplateResponse("main.html", {"request":request})
 
 @app.get("/")
 async def root():
