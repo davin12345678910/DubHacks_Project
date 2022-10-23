@@ -39,58 +39,84 @@
     <!--This will be the div
     where students can input information -->
     <div id="student-profile" class="hidden">
-        <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="topic">Topic:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-        <input type="text" id="topic" name="topic"><br><br>
-        <label for="question">Question:</label>
-        <input type="text" id="question" name="question"><br><br>
-        <label for="budget">Budget:&nbsp&nbsp&nbsp</label>
-        <input type="text" id="budget" name="question"><br><br>
-        <button id="back-to-choose-student">
-            back to choosing
-        </button>
-        <button id="student-submit-button">
-            Press to find matches!
-        </button>
+        <div id="student-profile-1">
+            <h1 id="title">budgetLearn</h1>
+        </div>
+
+        <div id="student-profile-2">
+            <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="topic">Topic:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="topic" name="topic"><br><br>
+            <label for="question">Question:</label>
+            <input type="text" id="question" name="question"><br><br>
+            <label for="budget">Budget:&nbsp&nbsp&nbsp</label>
+            <input type="text" id="budget" name="question"><br><br>
+            <div id="student-question-button">
+                <button id="back-to-choose-student">
+                    back to choosing
+                </button>
+                <button id="student-submit-button">
+                    Press to find matches!
+                </button>
+            </div>
+        </div>
     </div>
 
     <!--This will be the div
     where teachers can input information-->
     <div id="teacher-profile" class="hidden">
-        <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="topic">Topic:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-        <input type="text" id="topic" name="topic"><br><br>
-        <label for="question">Question:</label>
-        <input type="text" id="question" name="question"><br><br>
-        <label for="budget">Budget:&nbsp&nbsp&nbsp</label>
-        <input type="text" id="budget" name="question"><br><br>
-        <button id="back-to-choose-teacher">
-            back to choosing
-        </button>
-        <button id="teacher-submit-button">
-            Press to find matches!
-        </button>
+        <div id="teacher-profile-1">
+            <h1 id="title">budgetLearn</h1>
+        </div>
+
+        <div id="teacher-profile-2">
+            <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="skills">Topic:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="skills" name="skills"><br><br>
+            <label for="Rate">Rate:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="number" id="Rate" name="Rate"><br><br>
+
+            <div id="teacher-profile-buttons">
+                <button id="back-to-choose-teacher">
+                    back to choosing
+                </button>
+                <button id="teacher-submit-button">
+                    Press to find matches!
+                </button>
+            </div>
+        </div>
     </div>
 
 
     <div id="student-matches" class="hidden">
-        <h1>Here are some teacher matches:</h1>
+        <div id="student-matches-1">
+            <h1 id="title">budgetLearn</h1>
+        </div>
 
-        <button id="back-to-student-question">
-            previous form
-        </button>
+        <div id="student-matches-2">
+            <h1 class="title">Here are some teacher matches:</h1>
+
+            <button id="back-to-student-question">
+                previous form
+            </button>
+        </div>
     </div>
 
 
     <div id="teacher-matches" class="hidden">
-        <h1>Here are some student matches:</h1>
+        <div id="teacher-matches-1">
+            <h1 id="title">budgetLearn</h1>
+        </div>
 
-        <button id="back-to-teacher-profile">
-            previous form
-        </button>
+        <div id="teacher-matches-2">
+            <h1 class="title">Here are some student matches:</h1>
 
+            <button id="back-to-teacher-profile">
+                previous form
+            </button>
+        </div>
     </div>
 
   </body>
