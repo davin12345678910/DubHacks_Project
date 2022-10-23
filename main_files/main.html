@@ -6,18 +6,69 @@
     <meta charset='utf-8'>
     <title>BudgetLearn</title>
     <link href='https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
-    <link rel='stylesheet' href='yipper.css'>
-    <script src='yipper.js'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel='stylesheet' href='main.css'>
+    <script src='main.js'></script>
   </head>
   <body>
     <!--This will be the div for the new user creation div-->
-    <div>
+    <div id="sp">
         <h1>Welcome to budgetLearn!</h1>
 
+        <br>
+        <br>
+        <br>
 
+        <h2>Wanna learn on a budget or teach to earn some money!</h2>
+
+        <div id="first-buttons">
+            <button id="learn-button">
+                I wanna learn!
+            </button>
+
+            <button id="teach-button">
+                I wanna teach!
+            </button>
+        </div>
     </div>
 
-    <!--This will be the div for the part where -->
+    <!--This will be the div
+    where students can input information -->
+    <div id="student-profile" class="hidden">
+        <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="topic">Topic:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="topic" name="topic"><br><br>
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question"><br><br>
+        <label for="budget">Budget:&nbsp&nbsp&nbsp</label>
+        <input type="text" id="budget" name="question"><br><br>
+
+        <button id="student-submit-button">
+            Press to find matches!
+        </button>
+    </div>
+
+    <!--This will be the div
+    where teachers can input information-->
+    <div id="teacher-profile" class="hidden">
+        <label for="name">Name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="topic">Topic:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="topic" name="topic"><br><br>
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question"><br><br>
+        <label for="budget">Budget:&nbsp&nbsp&nbsp</label>
+        <input type="text" id="budget" name="question"><br><br>
+
+        <button id="teacher-submit-button">
+            Press to find matches!
+        </button>
+    </div>
+
+
+    <div id="student-matches" class="hidden">
+    </div>
 
   </body>
 </html>

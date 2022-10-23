@@ -6,7 +6,23 @@ Team members: Davin Win Kyi, Aditya`
   display: none;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
-  text-decoration: Arial, sans-serif;
+  text-decoration: "Audiowide", sans-serif;
+}
+
+#first-buttons {
+  height: 500px;
+  text-align: center;
+}
+
+#first-buttons > button {
+  height: 100px;
+  width: 200px;
+  border-radius: 10%;
+}
+
+#student-submit-button, #teacher-submit-button {
+  height: 25px;
+  width: 150px;
 }
