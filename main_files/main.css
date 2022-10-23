@@ -2,22 +2,27 @@
 Team members: Davin Win Kyi, Aditya`
 */
 
+/**
+
+**/
 body {
   text-align: center;
-  font-family: Maison Neue, sans-serif;
+  /*font-family: Arial, Geneva, Helvetica, sans-serif;*/
+  font-family: 'Maison Neue', sans-serif;
   height: 100vh;
   color: greenyellow;
 }
 
 #sp-1 {
-
-  font-family: arial, sans-serif;
+  padding-top: 200px;
+  font-family: 'Maison Neue', sans-serif;
+  /*font-family: Arial, Geneva, Helvetica, sans-serif;*/
   position: fixed;
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  color: black;
+  color: limegreen;
 }
 
 #title {
@@ -25,13 +30,17 @@ body {
 }
 
 #sp-2 {
+  color: white;
+  font-family: 'Maison Neue', sans-serif;
+  font-size: 30px;
+  padding-top: 165px;
   font-family: Maison Neue, sans-serif;
   position: fixed;
   top: 0;
   right: 0;
   width: 50%;
   height: 100%;
-  background-color: black;
+  background-color: limegreen;
 }
 
 #title {
@@ -55,14 +64,69 @@ h1, h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#first-buttons > button {
-  height: 50px;
-  width: 200px;
-  border-radius: 25%;
+#first-buttons > button, #back-to-choose-student, #student-submit-button, #back-to-choose-teacher, #teacher-submit-button,
+#back-to-student-question, #back-to-student-profile {
+  outline-style: solid;
+  border: 10px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  border-color: green;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+
+  background-color: limegreen;
+  border: 2px black;
 }
 
-#student-submit-button, #teacher-submit-button {
-  height: 25px;
+#student-profile-1, #teacher-profile-1, #student-matches-1, #teacher-matches-1 {
+  padding-top: 200px;
+  font-family: 'Maison Neue', sans-serif;
+  /*font-family: Arial, Geneva, Helvetica, sans-serif;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  color: limegreen;
+}
+
+#student-profile-2, #teacher-profile-2, #student-matches-2, #teacher-matches-2 {
+  color: white;
+  font-family: 'Maison Neue', sans-serif;
+  font-size: 30px;
+  padding-top: 165px;
+  font-family: Maison Neue, sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: limegreen;
+}
+
+
+#student-submit-button, #teacher-submit-button{
+  height: 45px;
   width: 150px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#back-to-choose-student, #student-submit-button, #back-to-choose-teacher, #teacher-submit-button {
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#student-profile {
+  color: limegreen
+}
+
+.title {
+  font-size: 35px;
 }
