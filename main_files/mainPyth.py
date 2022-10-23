@@ -3,8 +3,10 @@ from fastapi import FastAPI
 from typing import List
 from uuid import UUID, uuid4
 from models import User, Gender, Role, Tutor
+from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
+templaes = Jinja2Templates(directory="htmldirectory")
 
 db_user: list[User] = [
     User(
@@ -30,7 +32,7 @@ db_tutor: list[Tutor] = [
         gender="male",
         roles=[Role.tutor],
         subject="math",
-        rate="5"
+        rate="5" 
     ),
     Tutor(
         first_name="Pep",
@@ -41,6 +43,7 @@ db_tutor: list[Tutor] = [
         rate="8"
     )
 ]
+
 
 @app.get("/")
 async def root():
