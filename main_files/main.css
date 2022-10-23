@@ -5,3 +5,8 @@ Team members: Davin Win Kyi, Aditya`
 .hidden {
   display: none;
 }
+
+h1 {
+  text-align: center;
+  text-decoration: Arial, sans-serif;
+}
