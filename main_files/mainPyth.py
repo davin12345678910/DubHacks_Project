@@ -48,11 +48,6 @@ db_tutor: list[Tutor] = [
 
 @app.get("/home")
 def write_home(request: Request):
-    # return {
-    #     "Name": user_name,
-    #     "Age": 24,
-    #     "query": query
-    # }
     return templates.TemplateResponse("main.html", {"request":request})
 
 @app.get("/")
